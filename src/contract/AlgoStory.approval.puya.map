@@ -1,0 +1,1296 @@
+{
+  "version": 3,
+  "sources": [
+    "../../hello_world/contract.py"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;AAwBA;;;AAAA;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;;;AAAA;AAAA;AAGK;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAcA;;AAAA;AAAA;AAAA;;AAAA;AAjBL;;;AAAA;AAAA;;AAiBK;;;AAAA;AAAA;AA2BA;;AAAA;AAAA;AAAA;;AAAA;AA5CL;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AA4CK;;;AAAA;AAAA;AAkBA;;AAAA;AAAA;AAAA;;AAAA;AA9DL;;;AAAA;AAAA;;AA8DK;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAcA;;AAAA;AAAA;AAAA;;AAAA;AA5EL;;;AAAA;AAAA;;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AA4EK;;;AAAA;AAAA;AA5EL;;AAAA;;;;;;;;;AAAA;AAAA;AAGA;;;AAO4B;;AAApB;AAOR;;;AAQQ;AAEmB;;AACF;;;;;;;;;AAHjB;;;AAIQ;;;AAJR;;AAmBR;;;AAUY;;AAAA;;AAAwB;;AAAxB;AADJ;AAMwB;;AAAA;;AAAb;;;AAAX;;AAAA;;AA3BR;;;AAUe;;AAAA;AAAP;AAoBR;;;AAUmC;;AAAA;;;AAAX;AAChB;AACO;AAAP;AAER;;;AAQ2B;;AAAZ;;AAAA;;AAAA;AAAP;AACO;;AAAA;;AAAA;AAAA;;AAAA;;AAAA;;AAAP;AACO;;AAAA;;AAAoB;;AAApB;AAAP;AAGA;AAGiB;;;;;;;;;AAHjB;;;AAIQ;;;AAJR;",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "smart_contracts.hello_world.contract.AlgoStory.approval_program",
+      "params": {},
+      "block": "smart_contracts.hello_world.contract.AlgoStory.approval_program",
+      "stack_in": [],
+      "op": "intcblock 1 0 4"
+    },
+    "6": {
+      "op": "bytecblock 0x151f7c75"
+    },
+    "13": {
+      "callsub": "smart_contracts.hello_world.contract.AlgoStory.__puya_arc4_router__",
+      "op": "callsub __puya_arc4_router__",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "16": {
+      "op": "return",
+      "stack_out": []
+    },
+    "17": {
+      "subroutine": "smart_contracts.hello_world.contract.AlgoStory.__puya_arc4_router__",
+      "params": {},
+      "block": "__puya_arc4_router__",
+      "stack_in": [],
+      "op": "proto 0 1"
+    },
+    "20": {
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "22": {
+      "op": "bz __puya_arc4_router___bare_routing@9",
+      "stack_out": []
+    },
+    "25": {
+      "op": "pushbytess 0x19a642a7 0x6d848a14 0xc31e557a 0x2fcd97ca 0xc7ea4205 // method \"creator()address\", method \"book_opt_in(asset)void\", method \"list_book(axfer,uint64)void\", method \"book_price(asset)uint64\", method \"purchase_book(asset,pay)void\""
+    },
+    "52": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(book_opt_in(asset)void)",
+        "Method(book_price(asset)uint64)",
+        "Method(creator()address)",
+        "Method(list_book(axfer,uint64)void)",
+        "Method(purchase_book(asset,pay)void)",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "Method(creator()address)",
+        "Method(book_opt_in(asset)void)",
+        "Method(list_book(axfer,uint64)void)",
+        "Method(book_price(asset)uint64)",
+        "Method(purchase_book(asset,pay)void)",
+        "tmp%2#0"
+      ]
+    },
+    "55": {
+      "op": "match __puya_arc4_router___creator_route@2 __puya_arc4_router___book_opt_in_route@3 __puya_arc4_router___list_book_route@4 __puya_arc4_router___book_price_route@5 __puya_arc4_router___purchase_book_route@6",
+      "stack_out": []
+    },
+    "67": {
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "68": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "69": {
+      "block": "__puya_arc4_router___creator_route@2",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "71": {
+      "op": "!",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "72": {
+      "op": "assert // OnCompletion is NoOp",
+      "stack_out": []
+    },
+    "73": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "75": {
+      "op": "assert // is not creating",
+      "stack_out": []
+    },
+    "76": {
+      "callsub": "smart_contracts.hello_world.contract.AlgoStory.creator",
+      "op": "callsub creator",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "79": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0",
+        "0x151f7c75"
+      ]
+    },
+    "80": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "tmp%7#0"
+      ]
+    },
+    "81": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "82": {
+      "op": "log",
+      "stack_out": []
+    },
+    "83": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "84": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "85": {
+      "block": "__puya_arc4_router___book_opt_in_route@3",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%9#0"
+      ]
+    },
+    "87": {
+      "op": "!",
+      "defined_out": [
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "tmp%10#0"
+      ]
+    },
+    "88": {
+      "op": "assert // OnCompletion is NoOp",
+      "stack_out": []
+    },
+    "89": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "tmp%11#0"
+      ]
+    },
+    "91": {
+      "op": "assert // is not creating",
+      "stack_out": []
+    },
+    "92": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%13#0"
+      ],
+      "stack_out": [
+        "tmp%13#0"
+      ]
+    },
+    "95": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%14#0"
+      ],
+      "stack_out": [
+        "tmp%14#0"
+      ]
+    },
+    "96": {
+      "op": "txnas Assets",
+      "defined_out": [
+        "tmp%15#0"
+      ],
+      "stack_out": [
+        "tmp%15#0"
+      ]
+    },
+    "98": {
+      "callsub": "smart_contracts.hello_world.contract.AlgoStory.book_opt_in",
+      "op": "callsub book_opt_in",
+      "stack_out": []
+    },
+    "101": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "102": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "103": {
+      "block": "__puya_arc4_router___list_book_route@4",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%16#0"
+      ],
+      "stack_out": [
+        "tmp%16#0"
+      ]
+    },
+    "105": {
+      "op": "!",
+      "defined_out": [
+        "tmp%17#0"
+      ],
+      "stack_out": [
+        "tmp%17#0"
+      ]
+    },
+    "106": {
+      "op": "assert // OnCompletion is NoOp",
+      "stack_out": []
+    },
+    "107": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%18#0"
+      ],
+      "stack_out": [
+        "tmp%18#0"
+      ]
+    },
+    "109": {
+      "op": "assert // is not creating",
+      "stack_out": []
+    },
+    "110": {
+      "op": "txn GroupIndex",
+      "defined_out": [
+        "tmp%20#0"
+      ],
+      "stack_out": [
+        "tmp%20#0"
+      ]
+    },
+    "112": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1",
+        "tmp%20#0"
+      ],
+      "stack_out": [
+        "tmp%20#0",
+        "1"
+      ]
+    },
+    "113": {
+      "op": "-",
+      "defined_out": [
+        "gtxn_idx%0#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%0#0"
+      ]
+    },
+    "114": {
+      "op": "dup",
+      "defined_out": [
+        "gtxn_idx%0#0",
+        "gtxn_idx%0#0 (copy)"
+      ],
+      "stack_out": [
+        "gtxn_idx%0#0",
+        "gtxn_idx%0#0 (copy)"
+      ]
+    },
+    "115": {
+      "op": "gtxns TypeEnum",
+      "defined_out": [
+        "gtxn_idx%0#0",
+        "gtxn_type%0#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%0#0",
+        "gtxn_type%0#0"
+      ]
+    },
+    "117": {
+      "op": "intc_2 // axfer",
+      "defined_out": [
+        "axfer",
+        "gtxn_idx%0#0",
+        "gtxn_type%0#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%0#0",
+        "gtxn_type%0#0",
+        "axfer"
+      ]
+    },
+    "118": {
+      "op": "==",
+      "defined_out": [
+        "gtxn_idx%0#0",
+        "gtxn_type_matches%0#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%0#0",
+        "gtxn_type_matches%0#0"
+      ]
+    },
+    "119": {
+      "op": "assert // transaction type is axfer",
+      "stack_out": [
+        "gtxn_idx%0#0"
+      ]
+    },
+    "120": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "gtxn_idx%0#0",
+        "tmp%21#0"
+      ],
+      "stack_out": [
+        "gtxn_idx%0#0",
+        "tmp%21#0"
+      ]
+    },
+    "123": {
+      "callsub": "smart_contracts.hello_world.contract.AlgoStory.list_book",
+      "op": "callsub list_book",
+      "stack_out": []
+    },
+    "126": {
+      "op": "intc_0 // 1",
+      "stack_out": [
+        "1"
+      ]
+    },
+    "127": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "128": {
+      "block": "__puya_arc4_router___book_price_route@5",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%22#0"
+      ],
+      "stack_out": [
+        "tmp%22#0"
+      ]
+    },
+    "130": {
+      "op": "!",
+      "defined_out": [
+        "tmp%23#0"
+      ],
+      "stack_out": [
+        "tmp%23#0"
+      ]
+    },
+    "131": {
+      "op": "assert // OnCompletion is NoOp",
+      "stack_out": []
+    },
+    "132": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%24#0"
+      ],
+      "stack_out": [
+        "tmp%24#0"
+      ]
+    },
+    "134": {
+      "op": "assert // is not creating",
+      "stack_out": []
+    },
+    "135": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%26#0"
+      ],
+      "stack_out": [
+        "tmp%26#0"
+      ]
+    },
+    "138": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%27#0"
+      ],
+      "stack_out": [
+        "tmp%27#0"
+      ]
+    },
+    "139": {
+      "op": "txnas Assets",
+      "defined_out": [
+        "tmp%28#0"
+      ],
+      "stack_out": [
+        "tmp%28#0"
+      ]
+    },
+    "141": {
+      "callsub": "smart_contracts.hello_world.contract.AlgoStory.book_price",
+      "op": "callsub book_price",
+      "defined_out": [
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0"
+      ]
+    },
+    "144": {
+      "op": "itob",
+      "defined_out": [
+        "val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "val_as_bytes%0#0"
+      ]
+    },
+    "145": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "val_as_bytes%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "146": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "val_as_bytes%0#0"
+      ]
+    },
+    "147": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%29#0"
+      ],
+      "stack_out": [
+        "tmp%29#0"
+      ]
+    },
+    "148": {
+      "op": "log",
+      "stack_out": []
+    },
+    "149": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "150": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "151": {
+      "block": "__puya_arc4_router___purchase_book_route@6",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%30#0"
+      ],
+      "stack_out": [
+        "tmp%30#0"
+      ]
+    },
+    "153": {
+      "op": "!",
+      "defined_out": [
+        "tmp%31#0"
+      ],
+      "stack_out": [
+        "tmp%31#0"
+      ]
+    },
+    "154": {
+      "op": "assert // OnCompletion is NoOp",
+      "stack_out": []
+    },
+    "155": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%32#0"
+      ],
+      "stack_out": [
+        "tmp%32#0"
+      ]
+    },
+    "157": {
+      "op": "assert // is not creating",
+      "stack_out": []
+    },
+    "158": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%34#0"
+      ],
+      "stack_out": [
+        "tmp%34#0"
+      ]
+    },
+    "161": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%35#0"
+      ],
+      "stack_out": [
+        "tmp%35#0"
+      ]
+    },
+    "162": {
+      "op": "txnas Assets",
+      "defined_out": [
+        "tmp%36#0"
+      ],
+      "stack_out": [
+        "tmp%36#0"
+      ]
+    },
+    "164": {
+      "op": "txn GroupIndex",
+      "defined_out": [
+        "tmp%36#0",
+        "tmp%37#0"
+      ],
+      "stack_out": [
+        "tmp%36#0",
+        "tmp%37#0"
+      ]
+    },
+    "166": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1",
+        "tmp%36#0",
+        "tmp%37#0"
+      ],
+      "stack_out": [
+        "tmp%36#0",
+        "tmp%37#0",
+        "1"
+      ]
+    },
+    "167": {
+      "op": "-",
+      "defined_out": [
+        "gtxn_idx%1#0",
+        "tmp%36#0"
+      ],
+      "stack_out": [
+        "tmp%36#0",
+        "gtxn_idx%1#0"
+      ]
+    },
+    "168": {
+      "op": "dup",
+      "defined_out": [
+        "gtxn_idx%1#0",
+        "gtxn_idx%1#0 (copy)",
+        "tmp%36#0"
+      ],
+      "stack_out": [
+        "tmp%36#0",
+        "gtxn_idx%1#0",
+        "gtxn_idx%1#0 (copy)"
+      ]
+    },
+    "169": {
+      "op": "gtxns TypeEnum",
+      "defined_out": [
+        "gtxn_idx%1#0",
+        "gtxn_type%1#0",
+        "tmp%36#0"
+      ],
+      "stack_out": [
+        "tmp%36#0",
+        "gtxn_idx%1#0",
+        "gtxn_type%1#0"
+      ]
+    },
+    "171": {
+      "op": "intc_0 // pay",
+      "defined_out": [
+        "gtxn_idx%1#0",
+        "gtxn_type%1#0",
+        "pay",
+        "tmp%36#0"
+      ],
+      "stack_out": [
+        "tmp%36#0",
+        "gtxn_idx%1#0",
+        "gtxn_type%1#0",
+        "pay"
+      ]
+    },
+    "172": {
+      "op": "==",
+      "defined_out": [
+        "gtxn_idx%1#0",
+        "gtxn_type_matches%1#0",
+        "tmp%36#0"
+      ],
+      "stack_out": [
+        "tmp%36#0",
+        "gtxn_idx%1#0",
+        "gtxn_type_matches%1#0"
+      ]
+    },
+    "173": {
+      "op": "assert // transaction type is pay",
+      "stack_out": [
+        "tmp%36#0",
+        "gtxn_idx%1#0"
+      ]
+    },
+    "174": {
+      "callsub": "smart_contracts.hello_world.contract.AlgoStory.purchase_book",
+      "op": "callsub purchase_book",
+      "stack_out": []
+    },
+    "177": {
+      "op": "intc_0 // 1",
+      "stack_out": [
+        "1"
+      ]
+    },
+    "178": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "179": {
+      "block": "__puya_arc4_router___bare_routing@9",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%38#0"
+      ],
+      "stack_out": [
+        "tmp%38#0"
+      ]
+    },
+    "181": {
+      "op": "bnz __puya_arc4_router___after_if_else@13",
+      "stack_out": []
+    },
+    "184": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%39#0"
+      ],
+      "stack_out": [
+        "tmp%39#0"
+      ]
+    },
+    "186": {
+      "op": "!",
+      "defined_out": [
+        "tmp%40#0"
+      ],
+      "stack_out": [
+        "tmp%40#0"
+      ]
+    },
+    "187": {
+      "op": "assert // is creating",
+      "stack_out": []
+    },
+    "188": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "189": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "190": {
+      "block": "__puya_arc4_router___after_if_else@13",
+      "stack_in": [],
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "191": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "192": {
+      "subroutine": "smart_contracts.hello_world.contract.AlgoStory.creator",
+      "params": {},
+      "block": "creator",
+      "stack_in": [],
+      "op": "proto 0 1"
+    },
+    "195": {
+      "op": "global CreatorAddress",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "197": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "198": {
+      "subroutine": "smart_contracts.hello_world.contract.AlgoStory.book_opt_in",
+      "params": {
+        "nft#0": "uint64"
+      },
+      "block": "book_opt_in",
+      "stack_in": [],
+      "op": "proto 1 0"
+    },
+    "201": {
+      "op": "itxn_begin"
+    },
+    "202": {
+      "op": "global CurrentApplicationAddress",
+      "defined_out": [
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
+      ],
+      "stack_out": [
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
+      ]
+    },
+    "204": {
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "0",
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
+      ],
+      "stack_out": [
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0",
+        "0"
+      ]
+    },
+    "205": {
+      "op": "itxn_field AssetAmount",
+      "stack_out": [
+        "inner_txn_params%0%%param_AssetReceiver_idx_0#0"
+      ]
+    },
+    "207": {
+      "op": "itxn_field AssetReceiver",
+      "stack_out": []
+    },
+    "209": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "nft#0 (copy)"
+      ],
+      "stack_out": [
+        "nft#0 (copy)"
+      ]
+    },
+    "211": {
+      "op": "itxn_field XferAsset",
+      "stack_out": []
+    },
+    "213": {
+      "op": "intc_2 // axfer",
+      "defined_out": [
+        "axfer"
+      ],
+      "stack_out": [
+        "axfer"
+      ]
+    },
+    "214": {
+      "op": "itxn_field TypeEnum",
+      "stack_out": []
+    },
+    "216": {
+      "op": "intc_1 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "217": {
+      "op": "itxn_field Fee",
+      "stack_out": []
+    },
+    "219": {
+      "op": "itxn_submit"
+    },
+    "220": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "221": {
+      "subroutine": "smart_contracts.hello_world.contract.AlgoStory.list_book",
+      "params": {
+        "axfer#0": "uint64",
+        "price#0": "bytes"
+      },
+      "block": "list_book",
+      "stack_in": [],
+      "op": "proto 2 0"
+    },
+    "224": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "axfer#0 (copy)"
+      ],
+      "stack_out": [
+        "axfer#0 (copy)"
+      ]
+    },
+    "226": {
+      "op": "gtxns AssetReceiver",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "228": {
+      "op": "global CurrentApplicationAddress",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%1#0"
+      ]
+    },
+    "230": {
+      "op": "==",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "231": {
+      "op": "assert // Asset receiver must be the application address",
+      "stack_out": []
+    },
+    "232": {
+      "op": "frame_dig -2",
+      "stack_out": [
+        "axfer#0 (copy)"
+      ]
+    },
+    "234": {
+      "op": "gtxns XferAsset",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "236": {
+      "callsub": "smart_contracts.hello_world.contract.AlgoStory.box_key",
+      "op": "callsub box_key",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "239": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "price#0 (copy)",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0",
+        "price#0 (copy)"
+      ]
+    },
+    "241": {
+      "op": "box_put",
+      "stack_out": []
+    },
+    "242": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "243": {
+      "subroutine": "smart_contracts.hello_world.contract.AlgoStory.box_key",
+      "params": {
+        "nft#0": "uint64"
+      },
+      "block": "box_key",
+      "stack_in": [],
+      "op": "proto 1 1"
+    },
+    "246": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "nft#0 (copy)"
+      ],
+      "stack_out": [
+        "nft#0 (copy)"
+      ]
+    },
+    "248": {
+      "op": "itob",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "249": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "250": {
+      "subroutine": "smart_contracts.hello_world.contract.AlgoStory.book_price",
+      "params": {
+        "nft#0": "uint64"
+      },
+      "block": "book_price",
+      "stack_in": [],
+      "op": "proto 1 1"
+    },
+    "253": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "nft#0 (copy)"
+      ],
+      "stack_out": [
+        "nft#0 (copy)"
+      ]
+    },
+    "255": {
+      "callsub": "smart_contracts.hello_world.contract.AlgoStory.box_key",
+      "op": "callsub box_key",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "258": {
+      "op": "box_get",
+      "defined_out": [
+        "exists#0",
+        "value#0"
+      ],
+      "stack_out": [
+        "value#0",
+        "exists#0"
+      ]
+    },
+    "259": {
+      "op": "assert // Price not found",
+      "stack_out": [
+        "value#0"
+      ]
+    },
+    "260": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "261": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "262": {
+      "subroutine": "smart_contracts.hello_world.contract.AlgoStory.purchase_book",
+      "params": {
+        "nft#0": "uint64",
+        "payment#0": "uint64"
+      },
+      "block": "purchase_book",
+      "stack_in": [],
+      "op": "proto 2 0"
+    },
+    "265": {
+      "op": "global CurrentApplicationAddress",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "267": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "nft#0 (copy)",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "nft#0 (copy)"
+      ]
+    },
+    "269": {
+      "op": "asset_holding_get AssetBalance",
+      "defined_out": [
+        "check%0#0",
+        "value%0#0"
+      ],
+      "stack_out": [
+        "value%0#0",
+        "check%0#0"
+      ]
+    },
+    "271": {
+      "op": "assert // account opted into asset",
+      "stack_out": [
+        "value%0#0"
+      ]
+    },
+    "272": {
+      "op": "assert // NFT not available for purchase",
+      "stack_out": []
+    },
+    "273": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "payment#0 (copy)"
+      ],
+      "stack_out": [
+        "payment#0 (copy)"
+      ]
+    },
+    "275": {
+      "op": "gtxns Sender",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "277": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%2#0",
+        "tmp%2#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "tmp%2#0 (copy)"
+      ]
+    },
+    "278": {
+      "op": "frame_dig -2",
+      "stack_out": [
+        "tmp%2#0",
+        "tmp%2#0 (copy)",
+        "nft#0 (copy)"
+      ]
+    },
+    "280": {
+      "op": "asset_holding_get AssetBalance",
+      "defined_out": [
+        "tmp%2#0",
+        "tmp%3#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "tmp%3#0",
+        "tmp%4#0"
+      ]
+    },
+    "282": {
+      "op": "bury 1",
+      "stack_out": [
+        "tmp%2#0",
+        "tmp%4#0"
+      ]
+    },
+    "284": {
+      "op": "assert // Sender must opt in to receive NFT",
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "285": {
+      "op": "frame_dig -1",
+      "stack_out": [
+        "tmp%2#0",
+        "payment#0 (copy)"
+      ]
+    },
+    "287": {
+      "op": "gtxns Receiver",
+      "defined_out": [
+        "tmp%2#0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "tmp%5#0"
+      ]
+    },
+    "289": {
+      "op": "global CreatorAddress",
+      "defined_out": [
+        "tmp%2#0",
+        "tmp%5#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "tmp%5#0",
+        "tmp%6#0"
+      ]
+    },
+    "291": {
+      "op": "==",
+      "defined_out": [
+        "tmp%2#0",
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "tmp%7#0"
+      ]
+    },
+    "292": {
+      "op": "assert // Payment receiver must be the creator",
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "293": {
+      "op": "itxn_begin"
+    },
+    "294": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "1",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "1"
+      ]
+    },
+    "295": {
+      "op": "itxn_field AssetAmount",
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "297": {
+      "op": "itxn_field AssetReceiver",
+      "stack_out": []
+    },
+    "299": {
+      "op": "frame_dig -2",
+      "stack_out": [
+        "nft#0 (copy)"
+      ]
+    },
+    "301": {
+      "op": "itxn_field XferAsset",
+      "stack_out": []
+    },
+    "303": {
+      "op": "intc_2 // axfer",
+      "defined_out": [
+        "axfer"
+      ],
+      "stack_out": [
+        "axfer"
+      ]
+    },
+    "304": {
+      "op": "itxn_field TypeEnum",
+      "stack_out": []
+    },
+    "306": {
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "307": {
+      "op": "itxn_field Fee",
+      "stack_out": []
+    },
+    "309": {
+      "op": "itxn_submit"
+    },
+    "310": {
+      "retsub": true,
+      "op": "retsub"
+    }
+  }
+}

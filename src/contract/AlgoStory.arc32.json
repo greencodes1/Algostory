@@ -1,0 +1,144 @@
+{
+    "hints": {
+        "creator()address": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        },
+        "book_opt_in(asset)void": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        },
+        "list_book(axfer,uint64)void": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        },
+        "book_price(asset)uint64": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        },
+        "purchase_book(asset,pay)void": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        }
+    },
+    "source": {
+        "approval": "I3ByYWdtYSB2ZXJzaW9uIDEwCgpzbWFydF9jb250cmFjdHMuaGVsbG9fd29ybGQuY29udHJhY3QuQWxnb1N0b3J5LmFwcHJvdmFsX3Byb2dyYW06CiAgICBpbnRjYmxvY2sgMSAwIDQKICAgIGJ5dGVjYmxvY2sgMHgxNTFmN2M3NQogICAgY2FsbHN1YiBfX3B1eWFfYXJjNF9yb3V0ZXJfXwogICAgcmV0dXJuCgoKLy8gc21hcnRfY29udHJhY3RzLmhlbGxvX3dvcmxkLmNvbnRyYWN0LkFsZ29TdG9yeS5fX3B1eWFfYXJjNF9yb3V0ZXJfXygpIC0+IHVpbnQ2NDoKX19wdXlhX2FyYzRfcm91dGVyX186CiAgICBwcm90byAwIDEKICAgIHR4biBOdW1BcHBBcmdzCiAgICBieiBfX3B1eWFfYXJjNF9yb3V0ZXJfX19iYXJlX3JvdXRpbmdAOQogICAgcHVzaGJ5dGVzcyAweDE5YTY0MmE3IDB4NmQ4NDhhMTQgMHhjMzFlNTU3YSAweDJmY2Q5N2NhIDB4YzdlYTQyMDUgLy8gbWV0aG9kICJjcmVhdG9yKClhZGRyZXNzIiwgbWV0aG9kICJib29rX29wdF9pbihhc3NldCl2b2lkIiwgbWV0aG9kICJsaXN0X2Jvb2soYXhmZXIsdWludDY0KXZvaWQiLCBtZXRob2QgImJvb2tfcHJpY2UoYXNzZXQpdWludDY0IiwgbWV0aG9kICJwdXJjaGFzZV9ib29rKGFzc2V0LHBheSl2b2lkIgogICAgdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMAogICAgbWF0Y2ggX19wdXlhX2FyYzRfcm91dGVyX19fY3JlYXRvcl9yb3V0ZUAyIF9fcHV5YV9hcmM0X3JvdXRlcl9fX2Jvb2tfb3B0X2luX3JvdXRlQDMgX19wdXlhX2FyYzRfcm91dGVyX19fbGlzdF9ib29rX3JvdXRlQDQgX19wdXlhX2FyYzRfcm91dGVyX19fYm9va19wcmljZV9yb3V0ZUA1IF9fcHV5YV9hcmM0X3JvdXRlcl9fX3B1cmNoYXNlX2Jvb2tfcm91dGVANgogICAgaW50Y18xIC8vIDAKICAgIHJldHN1YgoKX19wdXlhX2FyYzRfcm91dGVyX19fY3JlYXRvcl9yb3V0ZUAyOgogICAgdHhuIE9uQ29tcGxldGlvbgogICAgIQogICAgYXNzZXJ0IC8vIE9uQ29tcGxldGlvbiBpcyBOb09wCiAgICB0eG4gQXBwbGljYXRpb25JRAogICAgYXNzZXJ0IC8vIGlzIG5vdCBjcmVhdGluZwogICAgY2FsbHN1YiBjcmVhdG9yCiAgICBieXRlY18wIC8vIDB4MTUxZjdjNzUKICAgIHN3YXAKICAgIGNvbmNhdAogICAgbG9nCiAgICBpbnRjXzAgLy8gMQogICAgcmV0c3ViCgpfX3B1eWFfYXJjNF9yb3V0ZXJfX19ib29rX29wdF9pbl9yb3V0ZUAzOgogICAgdHhuIE9uQ29tcGxldGlvbgogICAgIQogICAgYXNzZXJ0IC8vIE9uQ29tcGxldGlvbiBpcyBOb09wCiAgICB0eG4gQXBwbGljYXRpb25JRAogICAgYXNzZXJ0IC8vIGlzIG5vdCBjcmVhdGluZwogICAgdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMQogICAgYnRvaQogICAgdHhuYXMgQXNzZXRzCiAgICBjYWxsc3ViIGJvb2tfb3B0X2luCiAgICBpbnRjXzAgLy8gMQogICAgcmV0c3ViCgpfX3B1eWFfYXJjNF9yb3V0ZXJfX19saXN0X2Jvb2tfcm91dGVANDoKICAgIHR4biBPbkNvbXBsZXRpb24KICAgICEKICAgIGFzc2VydCAvLyBPbkNvbXBsZXRpb24gaXMgTm9PcAogICAgdHhuIEFwcGxpY2F0aW9uSUQKICAgIGFzc2VydCAvLyBpcyBub3QgY3JlYXRpbmcKICAgIHR4biBHcm91cEluZGV4CiAgICBpbnRjXzAgLy8gMQogICAgLQogICAgZHVwCiAgICBndHhucyBUeXBlRW51bQogICAgaW50Y18yIC8vIGF4ZmVyCiAgICA9PQogICAgYXNzZXJ0IC8vIHRyYW5zYWN0aW9uIHR5cGUgaXMgYXhmZXIKICAgIHR4bmEgQXBwbGljYXRpb25BcmdzIDEKICAgIGNhbGxzdWIgbGlzdF9ib29rCiAgICBpbnRjXzAgLy8gMQogICAgcmV0c3ViCgpfX3B1eWFfYXJjNF9yb3V0ZXJfX19ib29rX3ByaWNlX3JvdXRlQDU6CiAgICB0eG4gT25Db21wbGV0aW9uCiAgICAhCiAgICBhc3NlcnQgLy8gT25Db21wbGV0aW9uIGlzIE5vT3AKICAgIHR4biBBcHBsaWNhdGlvbklECiAgICBhc3NlcnQgLy8gaXMgbm90IGNyZWF0aW5nCiAgICB0eG5hIEFwcGxpY2F0aW9uQXJncyAxCiAgICBidG9pCiAgICB0eG5hcyBBc3NldHMKICAgIGNhbGxzdWIgYm9va19wcmljZQogICAgaXRvYgogICAgYnl0ZWNfMCAvLyAweDE1MWY3Yzc1CiAgICBzd2FwCiAgICBjb25jYXQKICAgIGxvZwogICAgaW50Y18wIC8vIDEKICAgIHJldHN1YgoKX19wdXlhX2FyYzRfcm91dGVyX19fcHVyY2hhc2VfYm9va19yb3V0ZUA2OgogICAgdHhuIE9uQ29tcGxldGlvbgogICAgIQogICAgYXNzZXJ0IC8vIE9uQ29tcGxldGlvbiBpcyBOb09wCiAgICB0eG4gQXBwbGljYXRpb25JRAogICAgYXNzZXJ0IC8vIGlzIG5vdCBjcmVhdGluZwogICAgdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMQogICAgYnRvaQogICAgdHhuYXMgQXNzZXRzCiAgICB0eG4gR3JvdXBJbmRleAogICAgaW50Y18wIC8vIDEKICAgIC0KICAgIGR1cAogICAgZ3R4bnMgVHlwZUVudW0KICAgIGludGNfMCAvLyBwYXkKICAgID09CiAgICBhc3NlcnQgLy8gdHJhbnNhY3Rpb24gdHlwZSBpcyBwYXkKICAgIGNhbGxzdWIgcHVyY2hhc2VfYm9vawogICAgaW50Y18wIC8vIDEKICAgIHJldHN1YgoKX19wdXlhX2FyYzRfcm91dGVyX19fYmFyZV9yb3V0aW5nQDk6CiAgICB0eG4gT25Db21wbGV0aW9uCiAgICBibnogX19wdXlhX2FyYzRfcm91dGVyX19fYWZ0ZXJfaWZfZWxzZUAxMwogICAgdHhuIEFwcGxpY2F0aW9uSUQKICAgICEKICAgIGFzc2VydCAvLyBpcyBjcmVhdGluZwogICAgaW50Y18wIC8vIDEKICAgIHJldHN1YgoKX19wdXlhX2FyYzRfcm91dGVyX19fYWZ0ZXJfaWZfZWxzZUAxMzoKICAgIGludGNfMSAvLyAwCiAgICByZXRzdWIKCgovLyBzbWFydF9jb250cmFjdHMuaGVsbG9fd29ybGQuY29udHJhY3QuQWxnb1N0b3J5LmNyZWF0b3IoKSAtPiBieXRlczoKY3JlYXRvcjoKICAgIHByb3RvIDAgMQogICAgZ2xvYmFsIENyZWF0b3JBZGRyZXNzCiAgICByZXRzdWIKCgovLyBzbWFydF9jb250cmFjdHMuaGVsbG9fd29ybGQuY29udHJhY3QuQWxnb1N0b3J5LmJvb2tfb3B0X2luKG5mdDogdWludDY0KSAtPiB2b2lkOgpib29rX29wdF9pbjoKICAgIHByb3RvIDEgMAogICAgaXR4bl9iZWdpbgogICAgZ2xvYmFsIEN1cnJlbnRBcHBsaWNhdGlvbkFkZHJlc3MKICAgIGludGNfMSAvLyAwCiAgICBpdHhuX2ZpZWxkIEFzc2V0QW1vdW50CiAgICBpdHhuX2ZpZWxkIEFzc2V0UmVjZWl2ZXIKICAgIGZyYW1lX2RpZyAtMQogICAgaXR4bl9maWVsZCBYZmVyQXNzZXQKICAgIGludGNfMiAvLyBheGZlcgogICAgaXR4bl9maWVsZCBUeXBlRW51bQogICAgaW50Y18xIC8vIDAKICAgIGl0eG5fZmllbGQgRmVlCiAgICBpdHhuX3N1Ym1pdAogICAgcmV0c3ViCgoKLy8gc21hcnRfY29udHJhY3RzLmhlbGxvX3dvcmxkLmNvbnRyYWN0LkFsZ29TdG9yeS5saXN0X2Jvb2soYXhmZXI6IHVpbnQ2NCwgcHJpY2U6IGJ5dGVzKSAtPiB2b2lkOgpsaXN0X2Jvb2s6CiAgICBwcm90byAyIDAKICAgIGZyYW1lX2RpZyAtMgogICAgZ3R4bnMgQXNzZXRSZWNlaXZlcgogICAgZ2xvYmFsIEN1cnJlbnRBcHBsaWNhdGlvbkFkZHJlc3MKICAgID09CiAgICBhc3NlcnQgLy8gQXNzZXQgcmVjZWl2ZXIgbXVzdCBiZSB0aGUgYXBwbGljYXRpb24gYWRkcmVzcwogICAgZnJhbWVfZGlnIC0yCiAgICBndHhucyBYZmVyQXNzZXQKICAgIGNhbGxzdWIgYm94X2tleQogICAgZnJhbWVfZGlnIC0xCiAgICBib3hfcHV0CiAgICByZXRzdWIKCgovLyBzbWFydF9jb250cmFjdHMuaGVsbG9fd29ybGQuY29udHJhY3QuQWxnb1N0b3J5LmJveF9rZXkobmZ0OiB1aW50NjQpIC0+IGJ5dGVzOgpib3hfa2V5OgogICAgcHJvdG8gMSAxCiAgICBmcmFtZV9kaWcgLTEKICAgIGl0b2IKICAgIHJldHN1YgoKCi8vIHNtYXJ0X2NvbnRyYWN0cy5oZWxsb193b3JsZC5jb250cmFjdC5BbGdvU3RvcnkuYm9va19wcmljZShuZnQ6IHVpbnQ2NCkgLT4gdWludDY0Ogpib29rX3ByaWNlOgogICAgcHJvdG8gMSAxCiAgICBmcmFtZV9kaWcgLTEKICAgIGNhbGxzdWIgYm94X2tleQogICAgYm94X2dldAogICAgYXNzZXJ0IC8vIFByaWNlIG5vdCBmb3VuZAogICAgYnRvaQogICAgcmV0c3ViCgoKLy8gc21hcnRfY29udHJhY3RzLmhlbGxvX3dvcmxkLmNvbnRyYWN0LkFsZ29TdG9yeS5wdXJjaGFzZV9ib29rKG5mdDogdWludDY0LCBwYXltZW50OiB1aW50NjQpIC0+IHZvaWQ6CnB1cmNoYXNlX2Jvb2s6CiAgICBwcm90byAyIDAKICAgIGdsb2JhbCBDdXJyZW50QXBwbGljYXRpb25BZGRyZXNzCiAgICBmcmFtZV9kaWcgLTIKICAgIGFzc2V0X2hvbGRpbmdfZ2V0IEFzc2V0QmFsYW5jZQogICAgYXNzZXJ0IC8vIGFjY291bnQgb3B0ZWQgaW50byBhc3NldAogICAgYXNzZXJ0IC8vIE5GVCBub3QgYXZhaWxhYmxlIGZvciBwdXJjaGFzZQogICAgZnJhbWVfZGlnIC0xCiAgICBndHhucyBTZW5kZXIKICAgIGR1cAogICAgZnJhbWVfZGlnIC0yCiAgICBhc3NldF9ob2xkaW5nX2dldCBBc3NldEJhbGFuY2UKICAgIGJ1cnkgMQogICAgYXNzZXJ0IC8vIFNlbmRlciBtdXN0IG9wdCBpbiB0byByZWNlaXZlIE5GVAogICAgZnJhbWVfZGlnIC0xCiAgICBndHhucyBSZWNlaXZlcgogICAgZ2xvYmFsIENyZWF0b3JBZGRyZXNzCiAgICA9PQogICAgYXNzZXJ0IC8vIFBheW1lbnQgcmVjZWl2ZXIgbXVzdCBiZSB0aGUgY3JlYXRvcgogICAgaXR4bl9iZWdpbgogICAgaW50Y18wIC8vIDEKICAgIGl0eG5fZmllbGQgQXNzZXRBbW91bnQKICAgIGl0eG5fZmllbGQgQXNzZXRSZWNlaXZlcgogICAgZnJhbWVfZGlnIC0yCiAgICBpdHhuX2ZpZWxkIFhmZXJBc3NldAogICAgaW50Y18yIC8vIGF4ZmVyCiAgICBpdHhuX2ZpZWxkIFR5cGVFbnVtCiAgICBpbnRjXzEgLy8gMAogICAgaXR4bl9maWVsZCBGZWUKICAgIGl0eG5fc3VibWl0CiAgICByZXRzdWIK",
+        "clear": "I3ByYWdtYSB2ZXJzaW9uIDEwCgpzbWFydF9jb250cmFjdHMuaGVsbG9fd29ybGQuY29udHJhY3QuQWxnb1N0b3J5LmNsZWFyX3N0YXRlX3Byb2dyYW06CiAgICBwdXNoaW50IDEgLy8gMQogICAgcmV0dXJuCg=="
+    },
+    "state": {
+        "global": {
+            "num_byte_slices": 0,
+            "num_uints": 0
+        },
+        "local": {
+            "num_byte_slices": 0,
+            "num_uints": 0
+        }
+    },
+    "schema": {
+        "global": {
+            "declared": {},
+            "reserved": {}
+        },
+        "local": {
+            "declared": {},
+            "reserved": {}
+        }
+    },
+    "contract": {
+        "name": "AlgoStory",
+        "desc": "A simple contract for selling NFTs.",
+        "methods": [
+            {
+                "name": "creator",
+                "args": [],
+                "readonly": false,
+                "returns": {
+                    "type": "address",
+                    "desc": "The creator's address."
+                },
+                "desc": "A public method that returns the creator's address encoded as an ARC-4 ABI type."
+            },
+            {
+                "name": "book_opt_in",
+                "args": [
+                    {
+                        "type": "asset",
+                        "name": "nft",
+                        "desc": "The asset to opt in to."
+                    }
+                ],
+                "readonly": false,
+                "returns": {
+                    "type": "void"
+                },
+                "desc": "Opts the contract into an asset."
+            },
+            {
+                "name": "list_book",
+                "args": [
+                    {
+                        "type": "axfer",
+                        "name": "axfer",
+                        "desc": "The transaction transferring the asset for sale to the contract."
+                    },
+                    {
+                        "type": "uint64",
+                        "name": "price",
+                        "desc": "The minimum price the asset can be sold for."
+                    }
+                ],
+                "readonly": false,
+                "returns": {
+                    "type": "void"
+                },
+                "desc": "Lists an NFT for sale."
+            },
+            {
+                "name": "book_price",
+                "args": [
+                    {
+                        "type": "asset",
+                        "name": "nft",
+                        "desc": "The NFT."
+                    }
+                ],
+                "readonly": false,
+                "returns": {
+                    "type": "uint64",
+                    "desc": "The minimum sale price in MicroAlgos."
+                },
+                "desc": "Returns the minimum sale price for an NFT."
+            },
+            {
+                "name": "purchase_book",
+                "args": [
+                    {
+                        "type": "asset",
+                        "name": "nft",
+                        "desc": "The NFT being purchased."
+                    },
+                    {
+                        "type": "pay",
+                        "name": "payment",
+                        "desc": "The payment to the creator."
+                    }
+                ],
+                "readonly": false,
+                "returns": {
+                    "type": "void"
+                },
+                "desc": "Allows a user to purchase an NFT."
+            }
+        ],
+        "networks": {}
+    },
+    "bare_call_config": {
+        "no_op": "CREATE"
+    }
+}
